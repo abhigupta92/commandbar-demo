@@ -2,7 +2,6 @@ import ky from 'ky';
 
 export const initCommandbar = (userId: string, cb: any) => {
   window.CommandBar.boot(userId).then(cb);
-  window.CommandBar.setTheme('matrix-vibes');
 };
 
 const onSearchUsers = (): Promise<any> => {
